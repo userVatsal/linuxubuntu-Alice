@@ -1,0 +1,194 @@
+Sure, here are the commands to complete the tasks in Unit 1 Workshop 1 on directories:
+
+### Directories
+
+1. **Find your current working directory:**
+   ```bash
+   pwd
+   ```
+
+### Listing the Contents of a Directory
+
+2. **List the contents of your working directory:**
+   ```bash
+   ls
+   ```
+
+3. **List all contents, including hidden files:**
+   ```bash
+   ls -a
+   ```
+
+4. **List the size of each directory or file in human-readable format:**
+   ```bash
+   ls -sh
+   ```
+
+5. **List the contents in long format with details:**
+   ```bash
+   ls -l
+   ```
+
+6. **Combine options for `ls` (e.g., long format with human-readable sizes):**
+   ```bash
+   ls -lh
+   ```
+
+### Changing Directory and Making New Directories
+
+7. **Change to the `Documents` directory:**
+   ```bash
+   cd Documents
+   ```
+
+8. **Check your current directory:**
+   ```bash
+   pwd
+   ```
+
+9. **Create a new directory called `dir1`:**
+   ```bash
+   mkdir dir1
+   ```
+
+10. **Check that `dir1` has been created:**
+    ```bash
+    ls
+    ```
+
+11. **Move into `dir1` and create `dir2` and `dir3` inside it:**
+    ```bash
+    cd dir1
+    mkdir dir2 dir3
+    ```
+
+12. **Check that `dir2` and `dir3` have been created:**
+    ```bash
+    ls
+    ```
+
+13. **Move inside `dir2` and print the working directory:**
+    ```bash
+    cd dir2
+    pwd
+    ```
+
+14. **Move up one level to the parent directory:**
+    ```bash
+    cd ..
+    pwd
+    ```
+
+15. **Move up another level to the `Documents` directory:**
+    ```bash
+    cd ..
+    pwd
+    ```
+
+16. **List the contents of all directories recursively:**
+    ```bash
+    ls -R
+    ```
+
+### Constructing Relative File Paths
+
+17. **Move straight into `dir2` using a relative path:**
+    ```bash
+    cd dir1/dir2
+    pwd
+    ```
+
+18. **Move straight to `dir3` using a relative path:**
+    ```bash
+    cd ../dir3
+    pwd
+    ```
+
+19. **Move straight to the `Documents` directory by moving up two levels:**
+    ```bash
+    cd ../..
+    pwd
+    ```
+
+20. **Move into `dir3`, create `dir4` inside it, and then move into `dir4`:**
+    ```bash
+    cd dir1/dir3
+    mkdir dir4
+    cd dir4
+    pwd
+    ```
+
+21. **Move from `dir4` to `dir2` with a single command:**
+    ```bash
+    cd ../dir2
+    pwd
+    ```
+
+22. **Move back to the last directory (`dir4`):**
+    ```bash
+    cd -
+    pwd
+    ```
+
+23. **Return to your home directory:**
+    ```bash
+    cd
+    ```
+
+24. **Go straight to `dir3` from your home directory:**
+    ```bash
+    cd Documents/dir1/dir3
+    pwd
+    ```
+
+25. **Create `dir5` and `dir6` inside `dir4` while keeping `dir3` as your working directory:**
+    ```bash
+    mkdir dir4/dir5 dir4/dir6
+    ```
+
+26. **List the files inside `dir4` while keeping `dir3` as your working directory:**
+    ```bash
+    ls dir4
+    ```
+
+27. **Move up two levels to `Documents` and list the files inside `dir4`:**
+    ```bash
+    cd ../..
+    ls dir1/dir3/dir4
+    ```
+
+### Deleting Directories
+
+28. **Move into `dir4` and delete `dir6`:**
+    ```bash
+    cd dir1/dir3/dir4
+    rmdir dir6
+    ls
+    ```
+
+29. **Move up to `dir1` and try to delete `dir3`:**
+    ```bash
+    cd ..
+    cd ..
+    rmdir dir3
+    ```
+
+30. **Delete `dir3` using `rm -r`:**
+    ```bash
+    rm -r dir3
+    ```
+
+### Practice
+
+- **Explore the file system, create and remove directories, and move between them until you feel comfortable.**
+- **Make notes on today’s key points.**
+- **Research other options for `ls`, `mkdir`, `rmdir`, and `rm` commands and try them out.**
+- **Use `--help` to find information and options for a command:**
+  ```bash
+  ls --help
+  ```
+
+- **Create and delete several directories in one go using `mkdir` or `rmdir`:**
+  ```bash
+  mkdir -p parent/child1 parent/child2
+  rmdir parent/child1 parent/child2
