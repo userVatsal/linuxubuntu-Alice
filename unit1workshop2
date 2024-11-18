@@ -1,0 +1,193 @@
+Sure, here are the commands to complete the tasks in Unit 1 Workshop 2:
+
+### Recap and Setup
+
+1. **Create the directory structure:**
+   ```bash
+   mkdir -p ~/Documents/workshop2/{docs,work/main}
+   ```
+
+2. **Change your working directory to `docs`:**
+   ```bash
+   cd ~/Documents/workshop2/docs
+   ```
+
+### Creating Empty Files
+
+3. **Create an empty file called `lyrics.txt`:**
+   ```bash
+   touch lyrics.txt
+   ```
+
+4. **Create two more files called `movie` and `results.dat`:**
+   ```bash
+   touch movie results.dat
+   ```
+
+5. **Check that the files have been created:**
+   ```bash
+   ls
+   ```
+
+### Copying Files
+
+6. **Make a copy of `lyrics.txt` called `lyrics-copy.txt`:**
+   ```bash
+   cp lyrics.txt lyrics-copy.txt
+   ```
+
+7. **Check that the copy has been created:**
+   ```bash
+   ls
+   ```
+
+8. **Make a copy of `movie` called `movie-copy`:**
+   ```bash
+   cp movie movie-copy
+   ```
+
+9. **Check that the copy has been created:**
+   ```bash
+   ls
+   ```
+
+10. **Change your working directory to `workshop2`:**
+    ```bash
+    cd ~/Documents/workshop2
+    ```
+
+11. **Make a copy of `results.dat` in `docs` and name it `results-copy.dat`:**
+    ```bash
+    cp docs/results.dat docs/results-copy.dat
+    ```
+
+12. **Check that the copy has been successful:**
+    ```bash
+    ls docs
+    ```
+
+13. **Copy `results.dat` from `docs` to `work`:**
+    ```bash
+    cp docs/results.dat work/
+    ```
+
+14. **Move to the `work` directory and check the copy:**
+    ```bash
+    cd work
+    ls
+    ```
+
+15. **Copy `movie` from `docs` to `work` using the absolute path:**
+    ```bash
+    cp ~/Documents/workshop2/docs/movie .
+    ```
+
+16. **Check that `work` contains `results.dat` and `movie`:**
+    ```bash
+    ls
+    ```
+
+### Moving Files
+
+17. **Move `movie` from `work` to `main`:**
+    ```bash
+    mv movie main/
+    ```
+
+18. **Check that `movie` has been moved:**
+    ```bash
+    ls
+    ls main
+    ```
+
+19. **Change your working directory to `main`:**
+    ```bash
+    cd main
+    ```
+
+20. **Move `results.dat` from `work` to `main`:**
+    ```bash
+    mv ../results.dat .
+    ```
+
+21. **Check that `results.dat` has been moved:**
+    ```bash
+    ls
+    ```
+
+### Renaming Files
+
+22. **Rename `movie` to `film`:**
+    ```bash
+    mv movie film
+    ```
+
+23. **Check that the renaming was successful:**
+    ```bash
+    ls
+    ```
+
+### Renaming Directories
+
+24. **Navigate to the `work` directory and rename `main` to `key`:**
+    ```bash
+    cd ..
+    mv main key
+    ```
+
+### Copying Directories
+
+25. **Make a copy of the `key` directory and call it `backup`:**
+    ```bash
+    cp -r key backup
+    ```
+
+26. **Check that `key` and `backup` have the same contents:**
+    ```bash
+    ls key
+    ls backup
+    ```
+
+### Deleting Files
+
+27. **Move inside the `key` directory and delete `results.dat`:**
+    ```bash
+    cd key
+    rm results.dat
+    ```
+
+28. **Restore `results.dat` from the `backup` directory:**
+    ```bash
+    cp ../backup/results.dat .
+    ```
+
+### Deleting Directories
+
+29. **Change your working directory to `work` and delete the `key` directory:**
+    ```bash
+    cd ..
+    rm -r key
+    ```
+
+30. **Restore the `key` directory by copying the `backup` directory:**
+    ```bash
+    cp -r backup key
+    ```
+
+### Practice
+
+- **Move a file and rename it with a single command:**
+  ```bash
+  mv file1 directory1/newfile1
+  ```
+
+- **Research other options for the `cp` and `mv` commands using `--help`:**
+  ```bash
+  cp --help
+  mv --help
+  ```
+
+- **Move an entire directory:**
+  ```bash
+  mv directory1 directory2/
+  ``
